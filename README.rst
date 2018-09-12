@@ -24,6 +24,19 @@ Start by cloning the repository to a machine with NumPy installed::
 NumPy Introductions
 --------------------
 
+Python Ecosystem
+~~~~~~~~~~~~~~~~~~
+
+* http://www.scipy-lectures.org/index.html
+* http://www.scipy-lectures.org/intro/intro.html
+
+
+* http://www.scipy-lectures.org/intro/numpy/index.html
+
+
+Slides
+~~~~~~~~
+
 * https://github.com/ContinuumIO/tutorials/blob/master/Intro_to_NumPy.pdf
 
 
