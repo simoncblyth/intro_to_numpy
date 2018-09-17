@@ -18,14 +18,17 @@ if __name__ == '__main__':
     a[:,0] = a[:,0]*2. - 1.   #  [0,1] -> [-1,1]
     a[:,1] = a[:,1]*0.75      #  [0,1] -> [0,0.75]     pdf(0) = pdf(1) = 0.75
 
-    sub = 5000    # size of smaller sample for scatter plots 
+    w = np.where( a[:,1] < pdf(a[:,0]) )  # indices of accepted sample
 
-    w = np.where( a[:,1] < pdf(a[:,0]) )           # accept sample
+    s = a[w][:,0]             # accepted sample
+
+
  
+    sub = 5000    # size of smaller sample for scatter plots 
     wsub = np.where( a[:sub,1] < pdf(a[:sub,0]) )  # lower stats accept sample : for scatter plots 
 
     dom = np.linspace(-1,1,21)
-    h,hx = np.histogram( a[w,0], bins=dom )        # histogram the accept sample
+    h,hx = np.histogram( s, bins=dom )        # histogram the accept sample
     assert np.all(hx == dom) 
 
     mx = (hx[:-1]+hx[1:])/2.                       # middle of bins
