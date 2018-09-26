@@ -21,6 +21,13 @@ Start by cloning the repository to a machine with NumPy installed::
     hg clone https://bitbucket.org/simoncblyth/intro_to_numpy
 
 
+
+load/save NumPy arrays from C++
+-----------------------------------
+
+* https://github.com/simoncblyth/np
+
+
 NumPy Introductions
 --------------------
 
