@@ -80,8 +80,9 @@ recon.py
     * perform NLL minimization to find "disturbance" origin position parameters 
       from the arrival times at positions on the sphere 
 
-    * positions, times and params are saved as npy files, for use by 
-      https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/RecTest.cu
+    * positions, times and params are saved as npy files, for use by the recon
+      extended example in 
+      https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/recon/
     
 accept_reject_sampling.py
     demo technique with plot 
