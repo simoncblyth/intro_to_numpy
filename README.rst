@@ -73,7 +73,6 @@ Highlighted Examples
 -----------------------
 
 recon.py
-
     * generate arrival times at coordinates on a sphere of a "disturbance" starting 
       within the sphere, assuming a normal distribution around geometric time
 
