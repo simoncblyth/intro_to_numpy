@@ -8,7 +8,6 @@ ipython -i exponential_pdf_cdf.py
    cdf(x) = 1 - exp(-x/mu) 
 
 
-
 * https://www.eg.bucknell.edu/~xmeng/Course/CS6337/Note/master/node50.html
 
 
@@ -41,7 +40,6 @@ plt.title(" CDF(x) = 1 - exp(-x/a) ")
 
 plt.annotate( " CDF(x) = u  ", xy=(3,0.5) )
 plt.annotate( " X = -a ln(1 - u) ", xy=(3,0.4) )
-
 
 
 fig.show()

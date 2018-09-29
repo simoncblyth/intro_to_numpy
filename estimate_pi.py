@@ -16,7 +16,6 @@ if __name__ == '__main__':
     a[:,0] = a[:,0]*2. - 1. 
     a[:,1] = a[:,1]*2. - 1. 
 
-
     mask = np.sum(a*a,1) < 1
     w = np.where(mask) 
     epi = 4*len(w[0])/len(a) 
@@ -27,8 +26,6 @@ if __name__ == '__main__':
 
     imask = np.logical_not( mask )
     iw = np.where(imask) 
-
-
 
 
     import matplotlib.pyplot as plt 
