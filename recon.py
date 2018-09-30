@@ -39,6 +39,8 @@ sph *= R
 
 # pick a "truth" position inside the sphere 
 parTru = np.array( [0,0,R/2, 1] ) 
+parLab = np.array( ['x','y','z','s'], dtype="|S1" )
+
 
 # distances from all the sphere coordinates to the true position 
 d = np.sqrt(np.sum((sph - parTru[:3])**2, axis=1 ))
@@ -56,6 +58,8 @@ os.makedirs(dir_, exist_ok=True )
 np.save(os.path.join(dir_, "t.npy"), t )
 np.save(os.path.join(dir_, "sph.npy"), sph )
 np.save(os.path.join(dir_, "parTru.npy"), parTru )
+np.save(os.path.join(dir_, "parLab.npy"), parLab.view(np.uint8) )
+
 
 # plot the sphere positions, and give them a color based on the time
 plot = False
