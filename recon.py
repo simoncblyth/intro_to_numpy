@@ -4,12 +4,7 @@ Toy Generate + Reconstruct
 ===========================
 
 Reconstruct source position from times at sphere positions
-with placeholder time PDF assumption of normal around geometric time.
-
-The positions and times are persisted to /tmp/recon for GPU NLL
-Minuit2 fitting with 
-
-* https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/fitRecon/fitRecon.cc
+with PDF model of a normal distribution around geometric time.
 
 1. generate coordinates on a sphere
 2. pick a truth position inside the sphere
@@ -19,6 +14,11 @@ Minuit2 fitting with
 6. plot sphere positions in 3d, coloured according to the time
 7. NLL minimization to reconstruct highest likelihood position for the times 
 8. compare the reconstructed and truth positions and smearings  
+
+The positions and times are persisted to /tmp/recon for GPU NLL
+Minuit2 fitting with 
+
+* https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/fitRecon/fitRecon.cc
 
 """
 import numpy as np
