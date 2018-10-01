@@ -7,7 +7,9 @@ Reconstruct source position from times at sphere positions
 with placeholder time PDF assumption of normal around geometric time.
 
 The positions and times are persisted to /tmp/recon for GPU NLL
-evaluation in https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/RecTest.cu
+Minuit2 fitting with 
+
+* https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/fitRecon/fitRecon.cc
 
 1. generate coordinates on a sphere
 2. pick a truth position inside the sphere
