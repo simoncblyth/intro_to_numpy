@@ -56,11 +56,19 @@ print("closest sph point to p ", closest)
 
 # persist the sphere positions and time arrays to file
 dir_ = "/tmp/recon"
-os.makedirs(dir_, exist_ok=True )
+
+if not os.path.exists(dir_):
+    os.makedirs(dir_)
+pass
+
+
+
 np.save(os.path.join(dir_, "t.npy"), t )
 np.save(os.path.join(dir_, "sph.npy"), sph )
 np.save(os.path.join(dir_, "parTru.npy"), parTru )
 np.save(os.path.join(dir_, "parLab.npy"), parLab.view(np.uint8) )
+
+print("saving to %s " % dir_ )
 
 
 # plot the sphere positions, and give them a color based on the time
@@ -79,7 +87,7 @@ pass
 
 
 # NLL (negative-log-likelihood) minimization to reconstruct position from the times
-fit = True 
+fit = False
 if fit:
     from scipy.optimize import minimize
     import scipy.stats as stats
