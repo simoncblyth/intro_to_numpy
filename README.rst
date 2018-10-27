@@ -1,6 +1,7 @@
 Introduction To NumPy
 =======================
 
+
 Installing NumPy and other packages using conda
 ----------------------------------------------------
 
