@@ -62,6 +62,11 @@ Start by cloning the repository to a machine with NumPy installed::
     hg clone https://bitbucket.org/simoncblyth/intro_to_numpy
 
 
+If you are planning to contribute and get write permission cloning from the ssh url is more convenient::
+
+    hg clone ssh://hg@bitbucket.org/simoncblyth/intro_to_numpy
+
+
 
 load/save NumPy arrays from C++
 -----------------------------------
@@ -107,6 +112,14 @@ normal.py
 
 dydx.py
     incomplete try at comparing numpy to python performance
+
+python_vs_numpy_vs_cupy/ellipse_closest_approach_to_point.py
+    compare python to numpy and cupy, in this example:
+    
+    * numpy is factor 10 faster than pure python
+    * cupy is more than a factor 1000 faster than numpy
+      (NVIDIA TITAN V) 
+
 
 
 NumPy Introductions
