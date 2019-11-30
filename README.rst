@@ -1,6 +1,7 @@
 Introduction To NumPy
 =======================
 
+
 Installing NumPy and other packages using conda
 ----------------------------------------------------
 
@@ -87,6 +88,10 @@ recon.py
     * positions, times and params are saved as npy files, for use by the recon
       extended example in 
       https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/recon/
+
+recon_terse.py
+    terse version of recon.py demonstrating array-oriented brevity 
+
     
 accept_reject_sampling.py
     demo technique with plot 
@@ -131,8 +136,19 @@ Python Ecosystem
 * http://www.scipy-lectures.org/index.html
 * http://www.scipy-lectures.org/intro/intro.html
 
-
 * http://www.scipy-lectures.org/intro/numpy/index.html
+
+
+Informative Papers on NumPy 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The NumPy array: a structure for efficient numerical computation
+Stefan Van Der Walt, S. Chris Colbert, Gaël Varoquaux
+
+* https://hal.inria.fr/inria-00564007/document
+
+
+
 
 
 Slides
