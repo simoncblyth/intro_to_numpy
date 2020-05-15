@@ -59,13 +59,13 @@ of using NumPy.
 
 Start by cloning the repository to a machine with NumPy installed::
 
-    which hg    # Mercurial is required
-    hg clone https://bitbucket.org/simoncblyth/intro_to_numpy
+    which git    # Git is required
+    git clone https://bitbucket.org/simoncblyth/intro_to_numpy
 
 
 If you are planning to contribute and get write permission cloning from the ssh url is more convenient::
 
-    hg clone ssh://hg@bitbucket.org/simoncblyth/intro_to_numpy
+    git clone git@bitbucket.org/simoncblyth/intro_to_numpy.git
 
 
 
