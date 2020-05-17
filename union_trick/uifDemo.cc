@@ -1,4 +1,4 @@
-// gcc uifDemo.cc -lstdc++ && ./a.out -10
+// gcc uifDemo.cc -lstdc++ && ./a.out -10 && rm ./a.out
 #include <iostream>
 #include <cassert>
 #include "uif.h"
@@ -6,19 +6,16 @@
 int main(int argc, char** argv)
 {
     int value = argc > 1 ? atoi(argv[1]) : -10 ;  
-
-    float a[3] = { 1.f, 1.f, 1.f } ; 
-
     uif_t uif ; 
     uif.i = value ;  
 
-    a[1] = uif.f ; // plant int in float array
-    
-    float b = a[1] ; 
+    float a[3] = { 1.f, 1.f, 1.f } ; 
+    a[1] = uif.f ; // plant int into float array
 
     uif_t uif2 ; 
-    uif2.f = b ;  
+    uif2.f = a[1] ; // float copy into 2nd union
 
+    assert( uif2.i == value ) ; // recover int 
 
     std::cout 
         << " uif.u " << uif.u 
@@ -27,12 +24,7 @@ int main(int argc, char** argv)
         << " uif2.u " << uif2.u 
         << " uif2.i " << uif2.i 
         << " uif2.f " << uif2.f
- 
         << std::endl ;  
-
-
-
-    assert( uif2.i == value ) ; // recover int 
 
     return 0 ; 
 }
