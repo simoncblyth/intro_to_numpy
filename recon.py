@@ -18,7 +18,7 @@ with PDF model of a normal distribution around geometric time.
 The positions and times are persisted to /tmp/recon for GPU NLL
 Minuit2 fitting with 
 
-* https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/fitRecon/fitRecon.cc
+* https://github.com/simoncblyth/intro_to_cuda/tree/master/fitRecon/fitRecon.cc
 
 """
 import numpy as np

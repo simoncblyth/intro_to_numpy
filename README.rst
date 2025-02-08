@@ -34,17 +34,17 @@ NumPy Documentation
 See Also
 ----------
 
-* https://simoncblyth.bitbucket.io/env/presentation/opticks_gpu_optical_photon_simulation_sep2018_qingdao.html
+* https://simoncblyth.github.io/env/presentation/opticks_gpu_optical_photon_simulation_sep2018_qingdao.html
 
   Presention slides in html, with many NumPy examples.
   Once the images load  (it takes a while sometimes) the html provides a javascript 
   interface to navigate the slide pages, with menu at bottom right.
 
-* https://simoncblyth.bitbucket.io/env/presentation/opticks_gpu_optical_photon_simulation_sep2018_qingdao.txt
+* https://simoncblyth.github.io/env/presentation/opticks_gpu_optical_photon_simulation_sep2018_qingdao.txt
 
-  If your connection to bitbucket is slow, you can get the RST text sources of the slides at this URL
+  If your connection to github is slow, you can get the RST text sources of the slides at this URL
 
-* https://bitbucket.org/simoncblyth/intro_to_cuda/
+* https://github.com/simoncblyth/intro_to_cuda/
 
   Learning NumPy is ideal preparation for Learning CUDA...
 
@@ -55,17 +55,17 @@ Hello World Examples
 This repository contains a few very simple examples
 of using NumPy.
 
-* https://bitbucket.org/simoncblyth/intro_to_numpy/src/
+* https://github.com/simoncblyth/intro_to_numpy/
 
 Start by cloning the repository to a machine with NumPy installed::
 
     which git    # Git is required
-    git clone https://bitbucket.org/simoncblyth/intro_to_numpy
+    git clone https://github.com/simoncblyth/intro_to_numpy
 
 
 If you are planning to contribute and get write permission cloning from the ssh url is more convenient::
 
-    git clone git@bitbucket.org/simoncblyth/intro_to_numpy.git
+    git clone git@github.com:simoncblyth/intro_to_numpy.git
 
 
 
@@ -87,7 +87,7 @@ recon.py
 
     * positions, times and params are saved as npy files, for use by the recon
       extended example in 
-      https://bitbucket.org/simoncblyth/intro_to_cuda/src/default/recon/
+      https://github.com/simoncblyth/intro_to_cuda/tree/master/recon
 
 recon_terse.py
     terse version of recon.py demonstrating array-oriented brevity 
